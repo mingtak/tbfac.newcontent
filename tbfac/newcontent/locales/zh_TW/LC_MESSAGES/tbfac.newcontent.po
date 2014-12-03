@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2014-12-03 18:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./profiles/default/types/tbfac.newcontent.newnews.xml
+msgid "New News-Item contnet type"
+msgstr "新聞(新)"
+
+#: ./profiles/default/types/tbfac.newcontent.newnews.xml
+msgid "NewNews"
+msgstr "新聞(新)"
+
+#: ./newnews.py:52
+msgid "Related 'Info' content type"
+msgstr "關連的活動訊息"
+
+#: ./newnews.py:62
+msgid "Reviewed Info"
+msgstr "尚未列於站內的活動訊息"
+
+#: ./newnews_templates/sampleview.pt:27
+msgid "Reviewed Infos"
+msgstr "相關活動訊息"
+
+#: ./newnews.py:63
+msgid "Use comma to separate multiple Info data."
+msgstr "如為兩節目以上展演項目，請用「,」分隔。例：《羅密歐與茱麗葉》,《馬克白》"
+
