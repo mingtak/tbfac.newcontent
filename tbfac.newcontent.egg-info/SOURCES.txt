@@ -1,0 +1,16 @@
+README.txt
+setup.cfg
+setup.py
+tbfac/__init__.py
+tbfac.newcontent.egg-info/PKG-INFO
+tbfac.newcontent.egg-info/SOURCES.txt
+tbfac.newcontent.egg-info/dependency_links.txt
+tbfac.newcontent.egg-info/entry_points.txt
+tbfac.newcontent.egg-info/namespace_packages.txt
+tbfac.newcontent.egg-info/not-zip-safe
+tbfac.newcontent.egg-info/paster_plugins.txt
+tbfac.newcontent.egg-info/requires.txt
+tbfac.newcontent.egg-info/top_level.txt
+tbfac/newcontent/__init__.py
+tbfac/newcontent/newnews.py
+tbfac/newcontent/tests.py
