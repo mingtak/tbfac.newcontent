@@ -36,13 +36,5 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
-    <plone:behavior
-        title="RelatedItem"
-        description="Related item founction"
-        provides=".relateditem.IRelatedItem"
-        factory=".relateditem.RelatedItem"
-        for="plone.dexterity.interfaces.IDexterityContent"
-        />
-
 
 </configure>
