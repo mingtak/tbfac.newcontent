@@ -36,5 +36,6 @@
 
   <!-- -*- extra stuff goes here -*- -->
   <include package=".eventshandle" />
+  <include file="permissions.zcml" />
 
 </configure>

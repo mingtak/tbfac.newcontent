@@ -5,15 +5,32 @@
     <role name="ContributingWriter" />
     <role name="ArtAndLife" />
   </roles>
+
   <permissions>
-  </permissions>
-<!--  <permissions i18n:domain="tbfac.newcontent">
-    <permission name="TBFAC: Add Info" acquire="False">
+
+    <permission name="TBFAC: Add Art and Life" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="ArtAndLife" />
+    </permission>
+<!--
+    <permission name="Add portal content" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Owner" />
+    </permission>
+-->
+    <permission name="Add portal content" acquire="True">
       <role name="Manager" />
       <role name="Site Administrator" />
       <role name="Owner" />
       <role name="Contributor" />
     </permission>
-  </permissions> -->
+
+
+
+  </permissions>
+
+
 </rolemap>
 

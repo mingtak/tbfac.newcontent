@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="tbfac.newcontent">
+
+    <!-- Define new permissions -->
+    
+    <permission
+        id="tbfac.AddArtAndLife"
+        title="TBFAC: Add Art and Life"
+        />
+
+
+</configure>
