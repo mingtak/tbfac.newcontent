@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-12-03 18:36+0000\n"
+"POT-Creation-Date: 2015-01-31 03:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr "尚未列於站內的活動訊息"
 
 #: ./newnews_templates/sampleview.pt:27
 msgid "Reviewed Infos"
-msgstr "相關活動訊息"
+msgstr "相關展演"
 
 #: ./newnews.py:63
 msgid "Use comma to separate multiple Info data."

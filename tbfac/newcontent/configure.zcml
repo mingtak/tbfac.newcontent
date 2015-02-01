@@ -35,6 +35,6 @@
       />
 
   <!-- -*- extra stuff goes here -*- -->
-
+  <include package=".eventshandle" />
 
 </configure>

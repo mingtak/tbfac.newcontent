@@ -14,3 +14,5 @@ tbfac.newcontent.egg-info/top_level.txt
 tbfac/newcontent/__init__.py
 tbfac/newcontent/newnews.py
 tbfac/newcontent/tests.py
+tbfac/newcontent/eventshandle/__init__.py
+tbfac/newcontent/eventshandle/eventshandle.py
