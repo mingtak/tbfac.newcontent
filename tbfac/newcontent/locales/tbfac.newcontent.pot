@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-01-31 03:36+0000\n"
+"POT-Creation-Date: 2015-02-25 09:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,22 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tbfac.newcontent\n"
 
+#: ./profiles/default/types/tbfac.newcontent.artandlife.xml
+msgid "Art and Life Article"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.newcontent.artandlife.xml
+msgid "ArtAndLife"
+msgstr ""
+
+#: ./artandlife.py:51
+msgid "Constraints size: 230X230 px"
+msgstr ""
+
+#: ./artandlife.py:65
+msgid "Lead Image"
+msgstr ""
+
 #: ./profiles/default/types/tbfac.newcontent.newnews.xml
 msgid "New News-Item contnet type"
 msgstr ""
@@ -25,10 +41,15 @@ msgstr ""
 msgid "NewNews"
 msgstr ""
 
+#: ./artandlife.py:74
+msgid "Referenced Info"
+msgstr ""
+
 #: ./newnews.py:52
 msgid "Related 'Info' content type"
 msgstr ""
 
+#: ./artandlife.py:86
 #: ./newnews.py:62
 msgid "Reviewed Info"
 msgstr ""
@@ -37,7 +58,26 @@ msgstr ""
 msgid "Reviewed Infos"
 msgstr ""
 
+#: ./artandlife.py:61
+msgid "Title"
+msgstr ""
+
+#: ./artandlife.py:87
 #: ./newnews.py:63
 msgid "Use comma to separate multiple Info data."
+msgstr ""
+
+#. Default: "If no referenced Info items to select, please manually fill them in the next field."
+#: ./artandlife.py:75
+msgid "help_ReferencedInfo"
+msgstr ""
+
+#. Default: "Upload a Image of Size 230x230."
+#: ./artandlife.py:66
+msgid "help_leadImage"
+msgstr ""
+
+#: ./artandlife.py:93
+msgid "text"
 msgstr ""
 

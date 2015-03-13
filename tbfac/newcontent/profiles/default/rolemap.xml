@@ -2,8 +2,8 @@
 <rolemap>
   <roles>
     <role name="Advisor" />
-    <role name="ContributingWriter" />
-    <role name="ArtAndLife" />
+    <role name="Guider" />
+    <role name="Writer" />
   </roles>
 
   <permissions>
@@ -27,7 +27,9 @@
       <role name="Contributor" />
     </permission>
 
-
+    <permission name="TBFAC: Is Anonymous" acquire="True">
+      <role name="Anonymous" />
+    </permission>
 
   </permissions>
 

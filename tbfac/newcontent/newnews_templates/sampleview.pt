@@ -33,7 +33,7 @@
       <span tal:condition="not:repeat/info/end" tal:replace="string:、">、</span>
     </tal:infos>
   </span>
-  <span tal:condition="python:len(context.info_ref) != 0 and context.info_rvw is not None" tal:replace="string:、">、</span>
+  <span tal:condition="python:context.info_ref is not None and len(context.info_ref) != 0 and context.info_rvw is not None" tal:replace="string:、">、</span>
   <span tal:condition="context/info_rvw">
     <span tal:replace="context/info_rvw">Name</span>
   </span>

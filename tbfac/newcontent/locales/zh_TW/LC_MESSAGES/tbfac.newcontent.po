@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-01-31 03:36+0000\n"
+"POT-Creation-Date: 2015-02-25 09:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,6 +14,22 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
+#: ./profiles/default/types/tbfac.newcontent.artandlife.xml
+msgid "Art and Life Article"
+msgstr "藝術與生活"
+
+#: ./profiles/default/types/tbfac.newcontent.artandlife.xml
+msgid "ArtAndLife"
+msgstr "藝術與生活"
+
+#: ./artandlife.py:51
+msgid "Constraints size: 230X230 px"
+msgstr "尺寸錯誤，圖片尺寸限制為 230x230px"
+
+#: ./artandlife.py:65
+msgid "Lead Image"
+msgstr "標題圖片"
+
 #: ./profiles/default/types/tbfac.newcontent.newnews.xml
 msgid "New News-Item contnet type"
 msgstr "新聞(新)"
@@ -22,10 +38,15 @@ msgstr "新聞(新)"
 msgid "NewNews"
 msgstr "新聞(新)"
 
+#: ./artandlife.py:74
+msgid "Referenced Info"
+msgstr "符合該文章之展演資訊項目"
+
 #: ./newnews.py:52
 msgid "Related 'Info' content type"
 msgstr "關連的活動訊息"
 
+#: ./artandlife.py:86
 #: ./newnews.py:62
 msgid "Reviewed Info"
 msgstr "尚未列於站內的活動訊息"
@@ -34,7 +55,26 @@ msgstr "尚未列於站內的活動訊息"
 msgid "Reviewed Infos"
 msgstr "相關展演"
 
+#: ./artandlife.py:61
+msgid "Title"
+msgstr "標題"
+
+#: ./artandlife.py:87
 #: ./newnews.py:63
 msgid "Use comma to separate multiple Info data."
 msgstr "如為兩節目以上展演項目，請用「,」分隔。例：《羅密歐與茱麗葉》,《馬克白》"
+
+#. Default: "If no referenced Info items to select, please manually fill them in the next field."
+#: ./artandlife.py:75
+msgid "help_ReferencedInfo"
+msgstr "若選單無該評論展演，則在下列「自行填寫評論展演」文字欄位中新增。"
+
+#. Default: "Upload a Image of Size 230x230."
+#: ./artandlife.py:66
+msgid "help_leadImage"
+msgstr "上傳 230x230 尺寸的圖檔，若未上傳將顯示ARTalks預設圖片。"
+
+#: ./artandlife.py:93
+msgid "text"
+msgstr "內文"
 

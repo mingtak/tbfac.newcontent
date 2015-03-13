@@ -12,6 +12,7 @@ tbfac.newcontent.egg-info/paster_plugins.txt
 tbfac.newcontent.egg-info/requires.txt
 tbfac.newcontent.egg-info/top_level.txt
 tbfac/newcontent/__init__.py
+tbfac/newcontent/artandlife.py
 tbfac/newcontent/newnews.py
 tbfac/newcontent/tests.py
 tbfac/newcontent/eventshandle/__init__.py
