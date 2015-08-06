@@ -13,7 +13,15 @@ tbfac.newcontent.egg-info/requires.txt
 tbfac.newcontent.egg-info/top_level.txt
 tbfac/newcontent/__init__.py
 tbfac/newcontent/artandlife.py
+tbfac/newcontent/catalog.py
 tbfac/newcontent/newnews.py
+tbfac/newcontent/profile.py
 tbfac/newcontent/tests.py
+tbfac/newcontent/browser/__init__.py
+tbfac/newcontent/browser/currentUserId.py
+tbfac/newcontent/browser/isAnonymous.py
+tbfac/newcontent/browser/isManager.py
+tbfac/newcontent/browser/isOwner.py
 tbfac/newcontent/eventshandle/__init__.py
-tbfac/newcontent/eventshandle/eventshandle.py
+tbfac/newcontent/eventshandle/creatProfile.py
+tbfac/newcontent/eventshandle/userLogin.py
