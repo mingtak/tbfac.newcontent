@@ -1,0 +1,12 @@
+from five import grok
+from plone import api
+#from Products.CMFPlone.utils import safe_unicode
+from Acquisition import aq_base
+from zope.lifecycleevent.interfaces import IObjectModifiedEvent
+from tbfac.newcontent.profile import IProfile
+
+@grok.subscribe(IProfile, IObjectModifiedEvent)
+def profileModify(context, event):
+    context.manage_permission("Copy or Move", acquire=1)
+    context.manage_permission('Copy or Move', roles=['Manager', 'Site Administrator'], acquire=False)
+#    import pdb; pdb.set_trace()

@@ -4,10 +4,10 @@
   xmlns:i18n="http://namespaces.zope.org/i18n"
   i18n_domain="tbfac.newcontent">
 
-
+<!--
   <subscriber
       for="Products.PlonePAS.events.UserLoggedInEvent"
       handler=".eventshandle.checkRoles"
   />
-
+-->
 </configure>

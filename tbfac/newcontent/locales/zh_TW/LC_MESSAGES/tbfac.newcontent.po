@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-02-25 09:09+0000\n"
+"POT-Creation-Date: 2015-08-04 04:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,19 +16,60 @@ msgstr ""
 
 #: ./profiles/default/types/tbfac.newcontent.artandlife.xml
 msgid "Art and Life Article"
-msgstr "藝術與生活"
+msgstr "身心靈快藝通"
 
 #: ./profiles/default/types/tbfac.newcontent.artandlife.xml
 msgid "ArtAndLife"
-msgstr "藝術與生活"
+msgstr "身心靈快藝通"
+
+#: ./artandlife.py:69
+msgid "Body and Soul"
+msgstr "（080靈）通話藝術家"
+
+#: ./viewlets/template/collect.pt:4
+msgid "Cancel Collect"
+msgstr "取消收藏"
+
+#: ./artandlife.py:67
+msgid "Category"
+msgstr "分類"
+
+#: ./profile.py:74
+#: ./viewlets/template/collect.pt:6
+msgid "Collect"
+msgstr "收藏本頁"
+
+#: ./profile.py:75
+msgid "Collection content"
+msgstr "收藏內容"
 
 #: ./artandlife.py:51
 msgid "Constraints size: 230X230 px"
 msgstr "尺寸錯誤，圖片尺寸限制為 230x230px"
 
-#: ./artandlife.py:65
+#: ./profile.py:59
+msgid "Contact email address"
+msgstr "聯絡郵箱"
+
+#: ./profile.py:35
+msgid "Invalid email address."
+msgstr "無效的email地址"
+
+#: ./artandlife.py:75
 msgid "Lead Image"
 msgstr "標題圖片"
+
+#: ./profiles/default/types/tbfac.newcontent.profile.xml
+msgid "Member's profile content type"
+msgstr "會員基本設定"
+
+#: ./artandlife.py:69
+msgid "Month Talk"
+msgstr "每月藝占"
+
+#: ./profiles/default/actions.xml
+msgid "My Home"
+msgstr "我的頁面"
 
 #: ./profiles/default/types/tbfac.newcontent.newnews.xml
 msgid "New News-Item contnet type"
@@ -38,7 +79,27 @@ msgstr "新聞(新)"
 msgid "NewNews"
 msgstr "新聞(新)"
 
-#: ./artandlife.py:74
+#: ./artandlife.py:69
+msgid "Novel"
+msgstr "奧奧巫異聞講堂"
+
+#: ./profile.py:44
+msgid "Persional image."
+msgstr "個人圖像"
+
+#: ./profiles/default/actions.xml
+msgid "Personal page Manager"
+msgstr "個人頁面管理員"
+
+#: ./profiles/default/types/tbfac.newcontent.profile.xml
+msgid "Profile"
+msgstr "個人頁面"
+
+#: ./profile_templates/sampleview.pt:50
+msgid "Read More"
+msgstr "閱讀更多"
+
+#: ./artandlife.py:84
 msgid "Referenced Info"
 msgstr "符合該文章之展演資訊項目"
 
@@ -46,7 +107,7 @@ msgstr "符合該文章之展演資訊項目"
 msgid "Related 'Info' content type"
 msgstr "關連的活動訊息"
 
-#: ./artandlife.py:86
+#: ./artandlife.py:96
 #: ./newnews.py:62
 msgid "Reviewed Info"
 msgstr "尚未列於站內的活動訊息"
@@ -55,26 +116,30 @@ msgstr "尚未列於站內的活動訊息"
 msgid "Reviewed Infos"
 msgstr "相關展演"
 
-#: ./artandlife.py:61
+#: ./artandlife.py:62
 msgid "Title"
 msgstr "標題"
 
-#: ./artandlife.py:87
+#: ./artandlife.py:97
 #: ./newnews.py:63
 msgid "Use comma to separate multiple Info data."
 msgstr "如為兩節目以上展演項目，請用「,」分隔。例：《羅密歐與茱麗葉》,《馬克白》"
 
+#: ./profile.py:58
+msgid "email"
+msgstr "email"
+
 #. Default: "If no referenced Info items to select, please manually fill them in the next field."
-#: ./artandlife.py:75
+#: ./artandlife.py:85
 msgid "help_ReferencedInfo"
 msgstr "若選單無該評論展演，則在下列「自行填寫評論展演」文字欄位中新增。"
 
 #. Default: "Upload a Image of Size 230x230."
-#: ./artandlife.py:66
+#: ./artandlife.py:76
 msgid "help_leadImage"
 msgstr "上傳 230x230 尺寸的圖檔，若未上傳將顯示ARTalks預設圖片。"
 
-#: ./artandlife.py:93
+#: ./artandlife.py:103
 msgid "text"
 msgstr "內文"
 

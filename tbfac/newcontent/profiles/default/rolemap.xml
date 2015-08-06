@@ -8,10 +8,10 @@
 
   <permissions>
 
-    <permission name="TBFAC: Add Art and Life" acquire="False">
+    <permission name="TBFAC: Add ArtAndLife" acquire="False">
       <role name="Manager" />
       <role name="Site Administrator" />
-      <role name="ArtAndLife" />
+      <role name="Writer" />
     </permission>
 <!--
     <permission name="Add portal content" acquire="False">
@@ -20,19 +20,116 @@
       <role name="Owner" />
     </permission>
 -->
-    <permission name="Add portal content" acquire="True">
+    <permission name="Add portal content" acquire="False">
       <role name="Manager" />
       <role name="Site Administrator" />
       <role name="Owner" />
       <role name="Contributor" />
     </permission>
 
-    <permission name="TBFAC: Is Anonymous" acquire="True">
-      <role name="Anonymous" />
+    <permission name="ATContentTypes: Add Document" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+    </permission>
+
+    <permission name="ATContentTypes: Add Event" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+    </permission>
+
+    <permission name="ATContentTypes: Add Folder" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+    </permission>
+
+    <permission name="ATContentTypes: Add File" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+    </permission>
+
+    <permission name="ATContentTypes: Add Link" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+    </permission>
+
+    <permission name="ATContentTypes: Add News Item" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+    </permission>
+
+    <permission name="ATContentTypes: Add Image" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+      <role name="Advisor" />
+      <role name="Guider" />
+      <role name="Writer" />
+    </permission>
+
+    <permission name="TBFAC: Add Jury" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+    </permission>
+
+    <permission name="TBFAC: Add Quarterly" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+      <role name="Advisor" />
+    </permission>
+
+    <permission name="TBFAC: Add Review" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+      <role name="Advisor" />
+      <role name="Guider" />
+    </permission>
+
+    <permission name="TBFAC: Add Committee" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+    </permission>
+
+    <permission name="TBFAC: Add Advert" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+    </permission>
+
+    <permission name="TBFAC: Add Recommendation" acquire="False">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+
+    <permission name="TBFAC: ADD Venue" acquire="False">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+
+    <permission name="TBFAC: ADD Profile" acquire="False">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+
+    <permission name="TBFAC: Add NewNews" acquire="False">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+
+    <permission name="TBFAC: Is Member" acquire="False">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Member"/>
     </permission>
 
   </permissions>
-
-
 </rolemap>
 

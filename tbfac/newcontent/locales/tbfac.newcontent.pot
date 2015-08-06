@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-02-25 09:09+0000\n"
+"POT-Creation-Date: 2015-08-04 04:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,12 +25,53 @@ msgstr ""
 msgid "ArtAndLife"
 msgstr ""
 
+#: ./artandlife.py:69
+msgid "Body and Soul"
+msgstr ""
+
+#: ./viewlets/template/collect.pt:4
+msgid "Cancel Collect"
+msgstr ""
+
+#: ./artandlife.py:67
+msgid "Category"
+msgstr ""
+
+#: ./profile.py:74
+#: ./viewlets/template/collect.pt:6
+msgid "Collect"
+msgstr ""
+
+#: ./profile.py:75
+msgid "Collection content"
+msgstr ""
+
 #: ./artandlife.py:51
 msgid "Constraints size: 230X230 px"
 msgstr ""
 
-#: ./artandlife.py:65
+#: ./profile.py:59
+msgid "Contact email address"
+msgstr ""
+
+#: ./profile.py:35
+msgid "Invalid email address."
+msgstr ""
+
+#: ./artandlife.py:75
 msgid "Lead Image"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.newcontent.profile.xml
+msgid "Member's profile content type"
+msgstr ""
+
+#: ./artandlife.py:69
+msgid "Month Talk"
+msgstr ""
+
+#: ./profiles/default/actions.xml
+msgid "My Home"
 msgstr ""
 
 #: ./profiles/default/types/tbfac.newcontent.newnews.xml
@@ -41,7 +82,27 @@ msgstr ""
 msgid "NewNews"
 msgstr ""
 
-#: ./artandlife.py:74
+#: ./artandlife.py:69
+msgid "Novel"
+msgstr ""
+
+#: ./profile.py:44
+msgid "Persional image."
+msgstr ""
+
+#: ./profiles/default/actions.xml
+msgid "Personal page Manager"
+msgstr ""
+
+#: ./profiles/default/types/tbfac.newcontent.profile.xml
+msgid "Profile"
+msgstr ""
+
+#: ./profile_templates/sampleview.pt:50
+msgid "Read More"
+msgstr ""
+
+#: ./artandlife.py:84
 msgid "Referenced Info"
 msgstr ""
 
@@ -49,7 +110,7 @@ msgstr ""
 msgid "Related 'Info' content type"
 msgstr ""
 
-#: ./artandlife.py:86
+#: ./artandlife.py:96
 #: ./newnews.py:62
 msgid "Reviewed Info"
 msgstr ""
@@ -58,26 +119,30 @@ msgstr ""
 msgid "Reviewed Infos"
 msgstr ""
 
-#: ./artandlife.py:61
+#: ./artandlife.py:62
 msgid "Title"
 msgstr ""
 
-#: ./artandlife.py:87
+#: ./artandlife.py:97
 #: ./newnews.py:63
 msgid "Use comma to separate multiple Info data."
 msgstr ""
 
+#: ./profile.py:58
+msgid "email"
+msgstr ""
+
 #. Default: "If no referenced Info items to select, please manually fill them in the next field."
-#: ./artandlife.py:75
+#: ./artandlife.py:85
 msgid "help_ReferencedInfo"
 msgstr ""
 
 #. Default: "Upload a Image of Size 230x230."
-#: ./artandlife.py:66
+#: ./artandlife.py:76
 msgid "help_leadImage"
 msgstr ""
 
-#: ./artandlife.py:93
+#: ./artandlife.py:103
 msgid "text"
 msgstr ""
 

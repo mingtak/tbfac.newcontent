@@ -52,6 +52,14 @@ def test_suite():
 
         # -*- extra stuff goes here -*-
 
+        # Integration tests for Profile
+        ztc.ZopeDocFileSuite(
+            'Profile.txt',
+            package='tbfac.newcontent',
+            optionflags = OPTION_FLAGS,
+            test_class=TestCase),
+
+
         # Integration tests for ArtAndLife
         ztc.ZopeDocFileSuite(
             'ArtAndLife.txt',

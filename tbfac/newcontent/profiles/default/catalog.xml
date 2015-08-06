@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object name="portal_catalog">
+
+    <index name="haveImage" meta_type="FieldIndex">
+        <indexed_attr value="haveImage"/>
+    </index>
+    <column value="haveImage"/>
+<!--
+    <index name="category" meta_type="FieldIndex">
+        <indexed_attr value="category"/>
+    </index>
+    <column value="category"/>
+-->
+
+</object>

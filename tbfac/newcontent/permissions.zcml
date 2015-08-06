@@ -7,12 +7,27 @@
     
     <permission
         id="tbfac.AddArtAndLife"
-        title="TBFAC: Add Art and Life"
+        title="TBFAC: Add ArtAndLife"
         />
 
     <permission
-        id="tbfac.IsAnonymous"
-        title="TBFAC: Is Anonymous"
+        id="tbfac.AddVenue"
+        title="TBFAC: ADD Venue"
+        />
+
+    <permission
+        id="tbfac.AddProfile"
+        title="TBFAC: ADD Profile"
+        />
+
+    <permission
+        id="tbfac.AddNewNews"
+        title="TBFAC: Add NewNews"
+        />
+
+    <permission
+        id="tbfac.IsMember"
+        title="TBFAC: Is Member"
         />
 
 </configure>

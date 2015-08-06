@@ -1,32 +1,26 @@
 <?xml version="1.0"?>
-<object name="tbfac.newcontent.newnews"
+<object name="tbfac.newcontent.profile"
    meta_type="Dexterity FTI"
    i18n:domain="tbfac.newcontent" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
   <!-- Basic metadata -->
-  <property name="title" i18n:translate="">NewNews</property>
+  <property name="title" i18n:translate="">Profile</property>
   <property name="description"
-    i18n:translate="">New News-Item contnet type</property>
+    i18n:translate="">Member's profile content type</property>
   <property name="icon_expr">string:${portal_url}/document_icon.png</property>
-  <property name="factory">tbfac.newcontent.newnews</property>
+  <property name="factory">tbfac.newcontent.profile</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">True</property>
   <property name="allowed_content_types" />
   <property name="allow_discussion">False</property>
 
   <!-- schema and class used for content items -->
-  <property name="schema">tbfac.newcontent.newnews.INewNews</property>
-  <property name="klass">tbfac.newcontent.newnews.NewNews</property>
+  <property name="schema">tbfac.newcontent.profile.IProfile</property>
+  <property name="klass">tbfac.newcontent.profile.Profile</property>
 
   <property name="behaviors">
-     <element value="tbfac.content.behaviors.createdid.INameFromCreated" />
-     <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
-     <element value="plone.app.contenttypes.behaviors.richtext.IRichText"/>
-<!--     <element value="plone.app.content.interfaces.INameFromTitle"/> -->
-     <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/>
-     <element value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation"/>
-     <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
-     <element value="plone.app.versioningbehavior.behaviors.IVersionable" />
+     <element value="plone.app.content.interfaces.INameFromTitle" />
+     <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
    </property>
 
   <!-- View information -->
@@ -37,7 +31,7 @@
    <element value="view"/>
   </property>
   <property name="default_view_fallback">False</property>
-  <property name="add_permission">tbfac.AddNewNews</property>
+  <property name="add_permission">tbfac.AddProfile</property>
 
 
   <!-- Method aliases -->

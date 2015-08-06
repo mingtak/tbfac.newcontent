@@ -1,0 +1,115 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="tbfac.newcontent">
+<body>
+
+ <metal:main fill-slot="content-core">
+  <metal:content-core define-macro="content-core">
+
+
+  <tal:isowner define="isOwner context/@@isOwner">
+
+
+
+    <ul class="content_list">
+      <li tal:repeat="item python:view.getBrain()">
+        <div class="tileItem visualIEFloatFix">
+<table style="width:100%"><tbody>
+<tr>
+<td style="width:30%">
+          <span style="float: left; margin: 0 1em 0.5em 0;">
+            <img tal:condition="item/haveImage"
+                 tal:attributes="src string:${item/getURL}/@@images/image/thumb" />
+            <img tal:condition="not:item/haveImage" style="width:128px"
+                 tal:attributes="src string:http://talks.taishinart.org.tw/++resource++tbfac.theme/img/default2.gif" />
+          </span>     
+</td>
+<td style="width:70%">
+          <h2 class="tileHeadline">
+            <a class="summary url"
+               tal:attributes="href item/getURL"
+               tal:content="item/Title">Title</a>
+
+            <span tal:condition="python:item.Type == 'ArtAndLife'">
+              <<tal:category repeat="category python:item.getObject().category">
+                 <span tal:replace="category" />
+                 <span tal:condition="not:repeat/category/end">, </span>
+               </tal:category>>
+            </span>
+
+            <span tal:condition="python:item.Type != 'ArtAndLife'">
+              <<span tal:replace="item/Type" />>
+            </span>
+
+            <tal:info condition="python:item.Type == 'Info'">
+              | <<span tal:content="item/review_state" i18n:domain="plone" i18n:translate="" />>
+            </tal:info>
+
+          </h2>
+          &mdash;
+          <span class="documentModified">
+          <span tal:replace="python:view.toLocalizedTime(item.created, long_format=1)">Auguest 16, 2001 at 23:35:59</span>
+          </span>
+
+          <p class="tileBody">
+            <span class="description" tal:condition="item/Description" tal:replace="item/Description" />
+          </p>
+
+
+<p>
+<a tal:condition="python:view.has_permission(permission='Modify portal content', user=view.get_current(), obj=item.getObject())"
+   tal:attributes="href string:${item/getURL}/edit">修改 </a>
+<a tal:condition="python:view.has_permission(permission='Delete objects', user=view.get_current(), obj=item.getObject()) and item.Type != 'Info'"
+   tal:attributes="href string:${item/getURL}/delete_confirmation">| 刪除</a>
+
+<a tal:condition="python:view.has_permission(permission='Request review', user=view.get_current(), obj=item.getObject())
+                         and item.review_state == 'private' and item.Type not in ['Info', 'Quarterly']"
+   tal:attributes="href string:${item/getURL}/content_status_modify?workflow_action=publish">| 發佈</a>
+
+<a tal:condition="python:view.has_permission(permission='Request review', user=view.get_current(), obj=item.getObject())
+                         and item.review_state == 'private' and item.Type == 'Quarterly'"
+   tal:attributes="href string:${item/getURL}/content_status_modify?workflow_action=submit">| 完稿通知管理員</a>
+
+<a tal:condition="python:view.has_permission(permission='Request review', user=view.get_current(), obj=item.getObject())
+                         and item.review_state == 'published' and item.Type not in  ['Info', 'Quarterly']"
+   tal:attributes="href string:${item/getURL}/content_status_modify?workflow_action=reject">| 收回</a>
+
+<a tal:condition="python:view.has_permission(permission='Request review', user=view.get_current(), obj=item.getObject())
+                         and item.review_state in ['pending', 'published'] and item.Type == 'Quarterly'"
+   tal:attributes="href string:${item/getURL}/content_status_modify?workflow_action=retract">| 收回</a>
+</p>
+
+          <p class="tileFooter">
+            <a href=""
+               tal:attributes="href item/getURL">
+              <span class="hiddenStructure"><span tal:replace="item/pretty_title_or_id" /> - </span>
+              <span i18n:translate="">Read More</span>
+            </a>
+          </p>
+
+</td>
+</tr></tbody></table>
+        </div>
+
+
+      </li>
+    </ul>
+
+
+  </tal:isowner>
+
+
+
+
+
+
+  </metal:content-core>
+ </metal:main>
+
+</body>
+</html>
+

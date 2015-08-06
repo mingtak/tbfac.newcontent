@@ -56,9 +56,18 @@ class IArtAndLife(form.Schema, IImageScaleTraversable):
     """
     Art and Life Article
     """
+
     dexteritytextindexer.searchable('title')
     title = schema.TextLine(
         title=_(u"Title"),
+    )
+
+    category = schema.List(
+        title=_(u'Category'),
+        value_type=schema.Choice(
+            values=[_(u'Month Talk'), _(u'Novel'), _(u'Body and Soul'),]
+        ),
+        required=True,
     )
 
     image = NamedBlobImage(
