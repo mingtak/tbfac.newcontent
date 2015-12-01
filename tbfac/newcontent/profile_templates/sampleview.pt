@@ -10,13 +10,25 @@
  <metal:main fill-slot="content-core">
   <metal:content-core define-macro="content-core">
 
+  <tal:isowner define="isOwner context/@@isOwner;
+                       request context/REQUEST;
+                       s python:getattr(request, 's', 0)">
 
-  <tal:isowner define="isOwner context/@@isOwner">
+
+
+<ul class="nav" style="float:rights">
+<li class="menuitem"><a tal:attributes="href string:${context/absolute_url}" class="menulink">所有文章</a></li>
+<li class="menuitem"><a tal:attributes="href string:${context/absolute_url}?t=info" class="menulink">藝術動態</a></li>
+<li class="menuitem"><a tal:attributes="href string:${context/absolute_url}?t=article" class="menulink">藝論紛紛</a></li>
+<li class="menuitem"><a tal:attributes="href string:${context/absolute_url}?t=review" class="menulink">提名觀察人</a></li>
+<li class="menuitem"><a tal:attributes="href string:${context/absolute_url}?t=artandlife" class="menulink">身心靈快藝通</a></li>
+</ul>
 
 
 
     <ul class="content_list">
-      <li tal:repeat="item python:view.getBrain()">
+
+      <li tal:repeat="item python:view.getBrain()[s:s+10]">
         <div class="tileItem visualIEFloatFix">
 <table style="width:100%"><tbody>
 <tr>
@@ -97,14 +109,55 @@
 
 
       </li>
+
     </ul>
+
+<div class="listingBar">
+    <span class="previous"
+      tal:condition="python:s>0">
+        <a href=""
+           tal:attributes="href python:'%s?s:int=%s&t=%s' % (context.absolute_url(), (0 if s-10<0 else s-10), request.get('t'))">
+           &laquo;
+           <span>前 10 筆</span>
+        </a>
+    </span>
+
+
+
+    <!-- Pagelist with links to previous pages for quick navigation -->
+<!--    <span tal:repeat="pagenumber python:range(s/10)"
+          tal:omit-tag="" >
+      <a href="" tal:content="python:pagenumber + 1" 
+         tal:attributes="href python:'%s?s:int=%s' % (context.absolute_url(), (pagenumber*10))"/>
+    </span>
+-->
+    <!-- Current page -->
+<!--    <span tal:condition="python:s>=10"
+          tal:omit-tag="">
+        [<span tal:content="python:s/10 + 1">Current page number</span>]
+    </span>
+-->
+    <!-- Pagelist with links to next pages for quick navigation -->
+<!--    <span tal:repeat="pagenumber batch/next_pages"
+          tal:omit-tag="" >
+      <a href="" tal:content="pagenumber" 
+         tal:attributes="href python:view.make_link(pagenumber)"/>
+    </span>
+-->
+
+    <!-- Link to last -->
+    <span tal:condition="python:s<len(view.getBrain())" style="float:right">
+        <a href=""
+           tal:attributes="href python:'%s?s:int=%s&t=%s' % (context.absolute_url(), s+10, request.get('t'))">
+           <span>後 10 筆</span>
+           &raquo;
+        </a>
+    </span>
+
+</div>
 
 
   </tal:isowner>
-
-
-
-
 
 
   </metal:content-core>

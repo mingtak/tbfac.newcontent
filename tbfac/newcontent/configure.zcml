@@ -35,6 +35,15 @@
       />
 
   <!-- -*- extra stuff goes here -*- -->
+
+    <plone:behavior
+        title="SpecialTitle"
+        description="Special title"
+        provides=".specialtitle.ISpecialTitle"
+        factory=".specialtitle.SpecialTitle"
+        for="plone.dexterity.interfaces.IDexterityContent"
+        />
+
   <include package=".eventshandle" />
   <include file="permissions.zcml" />
 

@@ -5,6 +5,12 @@
         <indexed_attr value="haveImage"/>
     </index>
     <column value="haveImage"/>
+
+    <index name="specialTitle" meta_type="FieldIndex">
+        <indexed_attr value="specialTitle"/>
+    </index>
+    <column value="specialTitle"/>
+
 <!--
     <index name="category" meta_type="FieldIndex">
         <indexed_attr value="category"/>

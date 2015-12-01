@@ -1,3 +1,4 @@
+#! *-* coding:utf-8 *-*
 from five import grok
 
 from z3c.form import group, field
@@ -114,10 +115,25 @@ class SampleView(grok.View):
 
     def getBrain(self):
         context = self.context
+        request = context.REQUEST
         catalog = context.portal_catalog
         ownerId = context.owner_info()['id']
+        # 加request參數
+#        import pdb; pdb.set_trace()
+        t = request.get('t')
+        if t == 'info':
+            queryList = ['Info']
+        elif t == 'article':
+            queryList = ['Article']
+        elif t == 'review':
+            queryList = ['Review', 'Quarterly']
+        elif t == 'artandlife':
+            queryList = ['ArtAndLife']
+        else:
+            queryList = ['Info', 'Review', 'Article', 'ArtAndLife', 'Quarterly']
+
         brain =  catalog({'Creator':ownerId,
-                          'Type':['Info', 'Review', 'Article', 'ArtAndLife', 'Quarterly']},
+                          'Type':queryList},
                          sort_on='created', sort_order='reverse')
         return brain
 
