@@ -115,13 +115,10 @@ msgstr "尚未列於站內的活動訊息"
 #: ./newnews_templates/sampleview.pt:27
 msgid "Reviewed Infos"
 msgstr "相關展演"
-<<<<<<< Updated upstream
 
 #: ./artandlife.py:62
 msgid "Title"
 msgstr "標題"
-=======
->>>>>>> Stashed changes
 
 #: ./artandlife.py:97
 #: ./newnews.py:63
